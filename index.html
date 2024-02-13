@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banding.Co</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <!--Navigation-->
+        <header>
+            <!--Burger menu-->
+            <nav class="mobile-nav">
+                <a href="index.html"><img src="img/logo-gron.png" alt="logo af en pentagon"></a>
+                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+            </nav>
+            <nav class="desktop-nav">
+                <!--Desktop navigation-->
+                <ul>
+                    <li><a class="active" href="#">Forside</a></li>
+                    <li><a href="#">Om</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <!--Banner billede med tekst-->
+        <header class="header-img">
+            <img class="bg-billede-desktop" src="img/computer.jpg" alt="Baggrundsbillede med computer">
+            <img class="bg-billede-mobil" src="img/computer-m.jpg" alt="Baggrundsbillede med computer">
+            <div class="banner-tekst">
+            <h1>Styrk din profesionelle fremtoning<br> og skab et bedre brand</h1>
+            <p>Lad os hjælpe dig med rejsen!</p>
+            <a href="#">Kontakt os</a>  
+        </div>  
+        </header>
+
+        <!--Hovedindhold-->
+        <main>
+            <h2>Hvad skal vi hjælpe dig med?</h2>
+            <section class="cta-wrapper">
+				
+                <!--Cta bokse-->
+                <div class="cta-1">
+                    <img src="img/branding.png" alt="">
+                    <h3>Branding</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, incidunt atque voluptatem consequuntur vel ut cupiditate itaque dolor sit amet.</p>
+                    <a class="primary-btn" href="#">Læs mere om branding</a>
+                </div>
+
+                <div class="cta-2">
+                    <img src="img/seo.png" alt="">
+                    <h3>SEO</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque modi iure omnis perferendis magnam suscipit eaque dolorem magni veniam culpa?</p>
+                    <a href="#">Læs mere om SEO</a>
+                </div>
+
+                <div class="cta-3">
+                    <img src="img/internet.png" alt="">
+                    <h3>Hjemmesider</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptas qui obcaecati voluptate deleniti saepe enim sit iste laborum omnis.</p>
+                    <a href="#">Læs om hjemmesider</a>
+                </div>
+            </section>
+
+            <!--Tekst og billede sektion-->
+            <section class="txt-img-section">
+                <div class="tekst">
+                    <h2>Vi går hele vejen med jer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ullam minus amet delectus inventore aspernatur repudiandae unde officiis itaque voluptas sit, vitae reprehenderit obcaecati voluptates eius tempore.Tempore optio repellendus nihil reprehenderit similique aliquam libero eveniet dolorem deserunt?</p>
+                    
+                    <p>Eum ea beatae laboriosam tempora molestias, similique nobis eveniet blanditiis reiciendis, praesentium explicabo id at architecto. Repudiandae consequuntur dolore commodi nesciunt quaerat perferendis rem. Laudantium ea, culpa accusamus ipsa illum.</p>  
+
+                    <p>Qui soluta eaque itaque quidem fugit repellendus dolore, delectus debitis nesciunt veniam, quasi a dolores libero officia sapiente numquam necessitatibus! Magni, veritatis quisquam? Delectus harum cupiditate ab sapiente inventore!</p>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab modi commodi alias asperiores amet, ipsam magnam velit similique in, maiores vero sint officiis! Ab aperiam porro consequuntur consectetur odit dicta.</p>
+
+                    <a class="secondary-btn" href="#">Læs mere om vores processarbejde</a>
+                </div>
+                <div class="billede">
+                    <!--Tom div til billede som indsættes i scss-->
+                </div>
+            </section>
+
+            <!--Kontaktformular-->
+            <section class="kontakt-bg-img">
+                <form class="kontaktform">
+                    <h3>Kontakt os</h3>
+                    <p>Kontakt os nedenfor hvis du ønsker et uforpligtende tilbud.</p>
+                    <div class="section-form">
+                        <label class="visually-hidden" for="navn">Navn</label>
+                        <input placeholder="Navn" id="navn" type="text" required>
+           
+                        <label class="visually-hidden" for="mail">E-mail</label>
+                        <input placeholder="E-mail" id="mail" type="email">
+                    </div>
+
+                    <div class="section-form"> 
+                        <label class="visually-hidden" for="telefon">Telefonnummer</label>
+                        <input placeholder="Telefon" id="telefon" type="tel">
+                    
+                        <label class="visually-hidden" for="region">Vælg region</label>
+                            <select id="region" name="select">
+                                <option value="0" selected disabled>Vælg region</option>
+                                <option value="1">Region Nordjylland</option>
+                                <option value="2">Region Midtjylland</option>
+                                <option value="3">Region Syddanmark</option>
+                                <option value="4">Region Sjælland</option>
+                                <option value="5">Region Hovedstaden</option>
+                            </select>
+                     </div>
+                     <div class="section-form">
+                     <label class="visually-hidden" for="besked">Besked</label>
+                     <textarea placeholder="Besked" id="besked" rows="8"></textarea>
+                    </div>
+                    <div class="section-form">
+                     <input type="submit" name="submit" value="Send besked">
+                    </div>
+                 </form>
+            </section>
+
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <section class="footer-left">
+                <h4>Info</h4>
+                <p>Banding.Co</p>
+                <p>Kassedammen 1</p>
+                <p>6755 Sønderby</p>
+                <p>Tlf.: <a href="tel:25456545">25 45 65 45</a></p>
+                <p>CVR: 2343 2323</p>
+            </section>
+            <div class="footer-right">
+                <img class="logo-footer" src="img/logo-gron.png" alt="">
+            </div>
+        </footer>
+        <!--Footer bund-->
+        <footer>
+                <p class="footer-bund">Banding.Co</p>
+        </footer>
+    </div>
+    <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.desktop-nav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
+</body>
+</html>
