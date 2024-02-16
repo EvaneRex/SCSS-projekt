@@ -1,2 +1,34 @@
 /*Variabler*/
-/*Mixins*//*# sourceMappingURL=style.css.map */
+/*Mixins*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F0F0F0;
+}
+body p {
+  font-size: 16px;
+  color: #484848;
+  line-height: 1.5;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: 600;
+  color: #484848;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+/*Navigation*//*# sourceMappingURL=style.css.map */

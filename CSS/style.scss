@@ -1,2 +1,88 @@
 @use 'partial';
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: partial.$font;
+    background-color: partial.$bg-color;
+
+        p{
+            font-size: 16px;
+            color: partial.$text-color;
+            line-height: 1.5;
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-weight: 600;
+            color: partial.$text-color;
+        }
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+
+
+/*Navigation*/
+
+header{
+    grid-column: 1/6;
+    @include partial.flex($justify: space-between); /*Dette er en mixin så man kalder ikke på dem med $*/
+    background-color: partial.$nav-color;
+    border-bottom: 4px solid partail.$primary-color;
+}
+
+nav{
+    color: partial.$text-color;
+    height: 6em;
+    padding: 1em;
+    @include partial.flex($justify:space-between);
+
+        img{
+            width: 70px;
+        }
+
+        ul{
+            @include partial.flex;
+            list-style-type: none;
+        }
+
+        a{
+            color: partial.$text-color;
+            padding: partial.$padding;
+            margin: partial.$padding;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+                &:hover{
+                    color: partial.$primary-color;
+                }
+        }
+}
+
+.mobile-nav{
+    .bars{
+        display: none;
+        cursor:pointer;
+    }
+}
+
+.toggleShow{
+    display: flex;
+    flex-direction: column;
+}
+
+.active{
+    color: partial.$primary-color;
+}
