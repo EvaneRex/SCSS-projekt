@@ -40,7 +40,7 @@ header{
     grid-column: 1/6;
     @include partial.flex($justify: space-between); /*Dette er en mixin så man kalder ikke på dem med $*/
     background-color: partial.$nav-color;
-    border-bottom: 4px solid partail.$primary-color;
+    border-bottom: 4px solid partial.$primary-color;
 }
 
 nav{
@@ -85,4 +85,85 @@ nav{
 
 .active{
     color: partial.$primary-color;
+}
+
+
+/*Headerbillede*/
+.header-img{
+    position: relative;
+    margin-bottom: 1em;
+
+        .banner-tekst{
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+
+        h2{
+            font-size: 3.5vw;
+        }
+
+        p{
+            font-size: 2vw;
+        }
+
+        a{
+            @include partial.btn;
+            position: absolute;
+
+                &:hover{
+                    background-color: partial.$secondary-color;
+                    transition: 0.4s ease-in-out;
+                }
+        }
+
+        .bg-billede-mobil{
+            display: none;
+        }
+}
+
+/*Forside styling*/
+
+main{
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+        h2{
+            grid-column: 1/7;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .cta-wrapper{
+            grid-column: 1/7;
+            display: flex;
+            justify-content: space-around;
+        }
+}
+
+/*CTA bokse*/
+
+.cta-1, .cta-2, .cta-3{
+    @include partial.cta-box;
+
+        img{
+            margin: 0 auto;
+            width: 60%;
+            display: block;
+        }
+
+        p{
+            margin-bottom: 2em;
+        }
+
+        a{
+            @include partial.btn;
+            display: block;
+
+                &:hover{
+                    background-color: partial.$secondary-color;
+                    transition: 0.4s ease-in-out;
+                }
+        }
 }
