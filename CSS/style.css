@@ -205,4 +205,73 @@ main .cta-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/*Kontaktformular*/
+.kontakt-bg-img {
+  grid-column: 1/7;
+  background: linear-gradient(rgba(142, 142, 142, 0.8), rgba(142, 142, 142, 0.8)), url(../img/meeting.jpg);
+  background-size: cover;
+}
+
+.kontaktform {
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  padding: 1.3em;
+  width: 50%;
+  margin: 4em auto;
+}
+.kontaktform h3 {
+  font-size: 25px;
+  margin-bottom: 0;
+  margin-left: 0.5em;
+}
+.kontaktform p {
+  margin-left: 1em;
+}
+
+.section-form {
+  display: flex;
+}
+
+/*Vælger de emner/typer der skal berørres af nedenstående css*/
+input[type=text], input[type=email], input[type=tel], select, textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 1em;
+  border: 2px solid #133833;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0.5em 1em 1em 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=submit] {
+  background-color: #3A8479;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  width: 100%;
+  margin: 0 1em;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #133833;
+  transition: 0.4s ease-in-out;
+}
+
+.visually-hidden { /*Bootstrap defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }/*# sourceMappingURL=style.css.map */
