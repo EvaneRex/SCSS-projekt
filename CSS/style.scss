@@ -1,12 +1,10 @@
 @use 'partial';
 
-*{
+
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body{
     font-family: partial.$font;
     background-color: partial.$bg-color;
 
@@ -166,4 +164,49 @@ main{
                     transition: 0.4s ease-in-out;
                 }
         }
+}
+
+/*Tekst og billede section*/
+
+.txt-img-section{
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.tekst{
+    grid-column: 1/5;
+    background-color: partial.$secondary-color;
+    padding: 2em 4em 4em 4em;
+
+        p, h2{
+            color: partial.$bg-color;
+        }
+
+        p:nth-of-type(4){
+            margin-bottom: 3em;
+        }
+
+        h2{
+            text-align: left;
+        }
+}
+
+.secondary-btn{
+    @include partial.btn($bg-color:transparent);
+    border: 2px solid #fff;
+
+        &:hover{
+            background-color: #fff;
+            color: partial.$secondary-color;
+            transition: 0.4s ease-in-out;
+        }
+}
+
+.billede{
+    grid-column: 5/8;
+    background-image: url(../img/presentation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
 }
